@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Lexend+Deca&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Rubik:wght@400;500&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+body {
+  font-size: 18px;
+}
+
+.content {
+  max-width: 1200px;
+  padding: 40px 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .desc {
+  width: 40%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  float: left;
+  padding: 10px 20px;
+  color: hsl(229deg, 8%, 60%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+ul li:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: hsl(229deg, 31%, 21%);
+  padding: 20px 0;
+}
+
+p {
+  color: hsl(229deg, 8%, 60%);
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.positioning {
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  background-color: hsl(231deg, 69%, 60%);
+  border-radius: 0 0 0 200px;
+  top: 200px;
+  right: 0;
+  z-index: -1;
+}
+
+.positioning2 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: hsl(231deg, 69%, 60%);
+  border-radius: 0 0 200px 0;
+  top: 200px;
+  left: 0;
+  z-index: -1;
+}
+
+.f-d-f {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 0 10px;
+  text-align: center;
+}
+.f-d-f h1 {
+  padding: 20px 0;
+}
+
+.blue-btn {
+  background-color: hsl(231deg, 69%, 60%);
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid hsl(231deg, 69%, 60%);
+  transition: 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blue-btn:hover {
+  color: hsl(231deg, 69%, 60%);
+  background-color: white;
+}
+
+.red-btn {
+  background-color: hsl(0deg, 94%, 66%);
+  color: white;
+  border: 2px solid hsl(0deg, 94%, 66%);
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.red-btn:hover {
+  color: hsl(0deg, 94%, 66%);
+  background-color: white;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+.header .container .links li:nth-child(4) {
+  background-color: hsl(0deg, 94%, 66%);
+  color: white;
+  border: 2px solid hsl(0deg, 94%, 66%);
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.header .container .links li:nth-child(4):hover {
+  color: hsl(0deg, 94%, 66%);
+  background-color: white;
+}
+.header .container .menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+main .repeat-2 {
+  position: relative;
+}
+main .tabs-section {
+  position: relative;
+}
+main .tabs-section .section-cont .content-tabs {
+  margin: 0 10px;
+}
+main .tabs-section .section-cont .content-tabs .tabs {
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+main .tabs-section .section-cont .content-tabs .tabs li {
+  border-bottom: 1px solid hsl(229deg, 8%, 60%);
+}
+main .tabs-section .section-cont .content-tabs .tabs .active {
+  color: hsl(0deg, 94%, 66%);
+  border-bottom: 1px solid hsl(0deg, 94%, 66%);
+}
+main .three-cards {
+  overflow: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+main .three-cards .card {
+  float: left;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px hsl(229deg, 8%, 60%);
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+}
+main .three-cards .card:nth-child(2) {
+  margin-top: 30px;
+}
+main .three-cards .card:nth-child(3) {
+  margin-top: 60px;
+}
+main .three-cards .card .image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+main .three-cards .card h1, main .three-cards .card p {
+  text-align: center;
+}
+main .three-cards .card p {
+  padding: 0;
+}
+main .three-cards .card .line {
+  padding: 10px 0;
+}
+main .three-cards .card button {
+  width: 100%;
+}
+main .accordion-section {
+  max-width: 550px;
+  padding: 10px;
+  margin: 0 auto;
+}
+main .accordion-section article:not(:last-child) {
+  border-bottom: 1px solid hsl(229deg, 8%, 60%);
+  margin-bottom: 15px;
+}
+main .accordion-section article .accordion {
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 0;
+  border: none;
+  color: hsl(229deg, 8%, 60%);
+  background-color: transparent;
+  cursor: pointer;
+}
+main .accordion-section article .accordion:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+main .accordion-section article .accordion:after {
+  content: url(./images/icon-arrow.svg);
+  float: right;
+}
+main .accordion-section article .convert-color {
+  color: hsl(0deg, 94%, 66%);
+}
+main .accordion-section article .convert-color:after {
+  rotate: 180deg;
+  transition: 0.5s ease;
+}
+main .accordion-section article .lapel {
+  display: none;
+}
+main .accordion-section article .show-cont2 {
+  display: block;
+}
+main .update {
+  background-color: hsl(231deg, 69%, 60%);
+  padding: 40px 0;
+}
+main .update .container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+main .update .container h1, main .update .container p {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+main .update .container form {
+  text-align: center;
+  padding: 10px;
+}
+main .update .container form input:nth-child(1) {
+  padding: 10px 30px;
+}
+main .update .container form .false {
+  border: 2px solid hsl(0deg, 94%, 66%);
+}
+main .overlay {
+  display: none;
+  padding-top: 10px;
+  background-color: rgba(37, 43, 70, 0.9);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+main .overlay .close {
+  cursor: pointer;
+}
+main .overlay .nav {
+  max-width: 80%;
+  margin: 0 auto;
+}
+main .overlay .nav ul li {
+  float: none;
+  text-align: center;
+  border-bottom: 1px solid hsl(229deg, 8%, 60%);
+  margin: 20px 0;
+}
+main .overlay .nav ul .login {
+  border: 2px solid hsl(229deg, 8%, 60%);
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+}
+main .overlay .nav ul .icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+main .overlay .nav ul .icons img {
+  display: inline-block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: hsl(229deg, 31%, 21%);
+}
+
+@media (max-width: 992px) {
+  .header .container .navBar {
+    display: none;
+  }
+  .header .container .menu {
+    display: block;
+  }
+  main .content {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+  main .content .desc {
+    width: 100%;
+  }
+  main .tabs-section .content {
+    flex-direction: column;
+  }
+  main .three-cards {
+    flex-direction: column;
+  }
+  main .three-cards .card {
+    margin: 10px auto;
+  }
+  footer .content {
+    flex-direction: column;
+  }
+  footer .content ul {
+    margin: 0 auto;
+  }
+  footer .content ul li {
+    float: none;
+    text-align: center;
+  }
+  footer .content .social {
+    margin-top: 20px;
+  }
+  footer .content .social li {
+    float: left;
+  }
+  main .three-cards .card {
+    margin: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .positioning {
+    width: 300px;
+    height: 180px;
+    top: 100px;
+  }
+  .positioning2 {
+    width: 300px;
+    height: 180px;
+    top: 210px;
+  }
+  main .tabs-section .section-cont .tabs li {
+    float: none;
+    text-align: center;
+  }
+  main .three-cards {
+    width: 100%;
+  }
+  main .three-cards .card {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  main .three-cards .card:nth-child(2) {
+    margin-top: 10px;
+  }
+  main .three-cards .card:nth-child(3) {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
